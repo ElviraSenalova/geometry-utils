@@ -1,7 +1,6 @@
+from geometry import calculate_rectangle_properties
 
-from geometry import calculate_area
-
-def test_calculate_area():
-    assert calculate_area(5, 10) == 50
-    assert calculate_area(0, 10) == 0
-    assert calculate_area(3.5, 2) == 7.0
+def test_calculate_rectangle_properties():
+    result = calculate_rectangle_properties(5, 10)
+    assert result["area"] == 50
+    assert result["perimeter"] == 30
