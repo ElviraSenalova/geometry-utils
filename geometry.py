@@ -1,8 +1,6 @@
-# geometry.py
-def calculate_area(length: float, width: float) -> float:
-    """Возвращает площадь прямоугольника."""
-    return length * width
-
-def calculate_perimeter(length: float, width: float) -> float:
-    """Возвращает периметр прямоугольника."""
-    return 2 * (length + width)
+def calculate_rectangle_properties(length: float, width: float) -> dict:
+    """Возвращает площадь и периметр прямоугольника в виде словаря."""
+    return {
+        "area": length * width,
+        "perimeter": 2 * (length + width)
+    }
